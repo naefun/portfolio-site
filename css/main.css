@@ -1,0 +1,375 @@
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* ------------- MY CUSTOM CSS -------------- */
+:root {
+    /*border style for sides*/
+    --aside-border: #FB6722 solid 1px;
+}
+
+/*scrollbar styling*/
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(251, 103, 34, 0.164);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(251, 103, 34, 0.336);
+}
+
+/*generic styling*/
+.wrapper {
+    height: 100vh;
+    display: flex;
+}
+
+aside {
+    background: #171717;
+    height: 100%;
+}
+
+/* navigation */
+.navigation-container {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+    border-right: var(--aside-border);
+}
+
+.logo {
+    height: auto;
+    max-width: 150px;
+    display: block;
+    justify-self: center;
+    align-self: center;
+}
+
+.sidebar-nav {
+    margin: 3.5em 0 0 0;
+    font-size: 1.2em;
+}
+
+.list-container {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list-container li {
+    margin: 0 0 2.5em 0;
+}
+
+#link1 {
+    color: #E919C8;
+}
+
+#link2 {
+    color: #F24270;
+}
+
+#link3 {
+    color: #F54D58;
+}
+
+#link4 {
+    color: #FB6722;
+}
+
+.social-links {
+    align-self: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.social-links li {
+    margin: 1.3em 0 0 0;
+}
+
+.social-links i {
+    font-size: 1.4em;
+    color: #fff;
+}
+
+/* nav pull tab */
+.navigation-pull-tab{
+    display: none;
+}
+
+/* misc bar */
+.misc-container {
+    overflow: auto;
+    padding: 2em;
+    border-left: var(--aside-border);
+    box-shadow: -6px 0px 17px 0px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.misc-title {
+    color: #505050;
+    font-size: 1.5em;
+}
+
+.spacer-line {
+    min-height: 1px;
+    width: 70%;
+    background: #FB6722;
+}
+
+.skills-image-container {
+    margin: 4em 0 0 0;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.2;
+}
+
+.skills-image-container img {
+    max-width: 5em;
+    margin: 0 0 3em 0;
+}
+
+/* misc pull tab */
+.misc-pull-tab{
+    display: none;
+}
+
+/* main content */
+.main-container {
+    padding: 1em;
+    width: 100%;
+    height: 100%;
+    background: #4b4b4b;
+    background-image: url(../imgs/geo-bg-dark.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    box-shadow: inset 28px 0 18px -20px rgba(0, 0, 0, 0.5);
+    overflow: auto;
+    text-align: center;
+}
+
+.main-title{
+    font-size: 4em;
+    margin: 1em 0 0 0;
+}
+.title-name{
+    color: #FB6722;
+}
+.main-summary{
+    font-size: 1.6em;
+    margin: 0;
+}
+.main-summary2{
+    color: #ffffff40;
+}
+.main-projects-title{
+    font-size: 1.5em;
+    font-weight: lighter;
+    margin: 2em 0 0.3em 0;
+}
+#projects-title-spacer {
+    width: 6em;
+}
+
+/*slideshow start*/
+.container {
+    margin: 3em 0 0 0;
+    display: grid;
+    grid-template-areas: "base";
+    width: 100%;
+}
+
+.side-slides-container {
+    grid-area: base;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.side-slides-container .slide {
+    width: 45%;
+    height: 30vh;
+}
+
+.side-slides-container .slide .content-container {
+    display: none;
+}
+
+.main-slide-container {
+    grid-area: base;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.main-slide-container .slide {
+    width: 60%;
+    height: 40vh;
+    cursor: default;
+}
+
+.slide {
+    cursor: pointer;
+    box-shadow: 0px 0px 17px 9px rgba(0, 0, 0, 0.5);
+}
+
+.content-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.content-container h1 {
+    margin: 0 0 0.3em 0;
+}
+
+.content-container .spacer-line{
+    width: 5em;
+    margin: 0 0 1.5em 0;
+}
+
+.content-container h3 {
+    margin: 0 0 2em 0;
+    font-size: 1em;
+    font-weight: lighter;
+}
+
+.button-container{
+    display: flex;
+}
+
+.cta-btn {
+    padding: 0.6em 1.5em;
+    background: #00000000;
+    border: solid #ff5e00 1px;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 2em;
+}
+
+.slide1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)),
+        url("https://lh3.googleusercontent.com/jTtkQaCCW_yxjILj8fFk4Hikev7cb9XQmBgm75r_9PBoYR9SWmuyEkz47BBllqmSsxnUn1ekTQ=w640-h400-e365");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)),
+        url("https://underconstructionpage.com/app/wp-content/uploads/screenshots-article/urlbox.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)),
+        url("https://www.optimisewebsites.co.uk/wp-content/uploads/2018/01/Step-1-Click-on-the-FireShot-Extension.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*slideshow end*/
+
+.see-more-btn{
+    margin: 4em 0;
+}
+
+
+
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .navigation-container, .misc-container{
+        display: none;
+        position: absolute;
+        box-shadow: 6px 0px 17px 0px rgba(0, 0, 0, 0.5);
+    }
+    .misc-container{
+        box-shadow: -6px 0px 17px 0px rgba(0, 0, 0, 0.5);
+        right: 0;
+    }
+
+    .main-container{
+        box-shadow: none;
+    }
+
+    .navigation-pull-tab, .misc-pull-tab{
+        height: 5em;
+        width: 1em;
+        display: block;
+        background: #ff5e0028;
+        color: #fff;
+        position: absolute;
+        top: 1em;
+        border-radius: 0em 50em 50em 0em;
+        box-shadow: 0 0 7px 2px #00000057;
+        cursor: pointer;
+    }
+
+    .navigation-pull-tab{
+        left: 0;
+    }
+
+    .misc-pull-tab{
+        right: 0;
+        border-radius: 50em 0 0 50em;
+        z-index: 2;
+    }
+
+    .navigation-pull-tab:hover{
+        width: 1.2em;
+    }
+}

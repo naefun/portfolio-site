@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags -->
+  <meta charset="utf-8">
+  <title>Hello, world!</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body onresize="checkViewWidth()">
+  <div class="wrapper">
+
+    <!-- navigation -->
+    <aside class="navigation-container" id="nav-con">
+      <img src="imgs/nblogo.png" alt="nblogo" class="logo">
+      <nav class="sidebar-nav">
+        <ul class="list-container">
+          <li><a href="#" id="link1">HOME</a></li>
+          <li><a href="#" id="link2">PROJECTS</a></li>
+          <li><a href="#" id="link3">ABOUT</a></li>
+          <li><a href="#" id="link4">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <div class="social-links">
+        <ul class="list-container">
+          <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="#"><i class="fab fa-github"></i></a></li>
+          <li><a href="#"><i class="fas fa-envelope-open-text"></i></a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="navigation-pull-tab" id="nav-pull-tab" onclick="navIconClick(this, 'nav-con')"></div>
+    <div class="misc-pull-tab" id="misc-pull-tab" onclick="navIconClick(this, 'misc-con')"></div>
+
+    <!-- main content -->
+    <div class="main-container" onclick="closeNav()">
+      <h1 class="main-title">Hi, I'm <span class="title-name">Nathan Byrne</span>.</h1>
+      <p class="main-summary">I'm a software developer based in Birmingham, UK.</p>
+      <p class="main-summary2">WEB DEVELOPMENT / WEB DESIGN / MOBILE APP DEVELOPMENT</p>
+      <h2 class="main-projects-title">Projects</h2>
+      <div class="spacer-line" id="projects-title-spacer"></div>
+
+      <!-- slideshow start-->
+      <div class="container">
+        <div class="side-slides-container" id="ssc">
+          <div class="slide slide1" id="slide1" onClick="moveSlide(this.id)">
+            <div class="content-container">
+              <h1>CONCEPT BOARD</h1>
+              <div class="spacer-line"></div>
+              <h3>HTML / CSS / JAVASCRIPT</h3>
+              <div class="button-container">
+                <a class="cta-btn">SITE</a>
+                <a class="cta-btn">CODE</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide slide2" id="slide2" onClick="moveSlide(this.id)">
+            <div class="content-container">
+              <h1>CNN</h1>
+              <div class="spacer-line"></div>
+              <h3>HTML / CSS / JAVASCRIPT</h3>
+              <div class="button-container">
+                <a class="cta-btn">SITE</a>
+                <a class="cta-btn">CODE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-slide-container" id="msc">
+          <div class="slide slide3" id="main-slide" onClick="moveSlide(this.id)">
+            <div class="content-container">
+              <h1>AMAZON</h1>
+              <div class="spacer-line"></div>
+              <h3>HTML / CSS / JAVASCRIPT</h3>
+              <div class="button-container">
+                <a class="cta-btn">SITE</a>
+                <a class="cta-btn">CODE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- slideshow end-->
+
+      <a class="cta-btn see-more-btn">SEE MORE</a>
+
+    </div>
+
+    <!-- misc section -->
+    <aside class="misc-container" id="misc-con">
+      <h2 class="misc-title">Skills</h2>
+      <div class="spacer-line"></div>
+      <div class="skills-image-container">
+        <img src="imgs/csslogo.png" alt="" class="skills-image">
+        <img src="imgs/jslogo.png" alt="" class="skills-image">
+        <img src="imgs/csharplogo.png" alt="" class="skills-image">
+        <img src="imgs/phplogo.png" alt="" class="skills-image">
+        <img src="imgs/pythonlogo.png" alt="" class="skills-image">
+        <img src="imgs/javalogo.png" alt="" class="skills-image">
+      </div>
+    </aside>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/slideshow-switcher.js"></script>
+</body>
+
+</html>

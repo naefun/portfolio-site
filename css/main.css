@@ -62,6 +62,10 @@ aside {
     height: 100%;
 }
 
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
 /* navigation */
 .navigation-container {
     overflow: auto;
@@ -69,6 +73,7 @@ aside {
     flex-direction: column;
     padding: 3em;
     border-right: var(--aside-border);
+    z-index: 5;
 }
 
 .logo {
@@ -92,6 +97,30 @@ aside {
 
 .list-container li {
     margin: 0 0 2.5em 0;
+    background: linear-gradient(to right, rgba(233, 25, 198, 0.164), rgba(251, 103, 34, 0.151), rgba(0, 0, 0, 0));
+}
+
+.list-container a{
+    text-decoration: none;
+    display: block;
+    padding: 0 0 0 0.5em;
+    transition: ease 0.5s;
+    background-color: #171717;
+}
+
+.sidebar-nav a:hover{
+    border-left: solid 2px rgba(233, 25, 198, 0.315);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.social-links li:nth-child(1):hover i{
+    color: #E919C8;
+}
+.social-links li:nth-child(2):hover i{
+    color: #F54D58;
+}
+.social-links li:nth-child(3):hover i{
+    color: #FB6722;
 }
 
 #link1 {
@@ -110,6 +139,11 @@ aside {
     color: #FB6722;
 }
 
+.active{
+    border-left: solid 2px rgba(233, 25, 198, 0.315);
+    background: linear-gradient(to right, rgba(233, 25, 198, 0.164), rgba(251, 103, 34, 0.151), rgba(0, 0, 0, 0));
+}
+
 .social-links {
     align-self: center;
     height: 100%;
@@ -125,11 +159,13 @@ aside {
 .social-links i {
     font-size: 1.4em;
     color: #fff;
+    transition: ease 0.5s;
 }
 
 /* nav pull tab */
 .navigation-pull-tab{
     display: none;
+    z-index: 6;
 }
 
 /* misc bar */
@@ -238,10 +274,21 @@ aside {
 .side-slides-container .slide {
     width: 45%;
     height: 30vh;
+    box-shadow: 0px 0px 17px 9px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+
+.side-slides-container .slide:hover{
+    opacity: 0.5;
 }
 
 .side-slides-container .slide .content-container {
     display: none;
+}
+
+.side-slides-container .background{
+    filter: blur(3px);
 }
 
 .main-slide-container {
@@ -252,6 +299,10 @@ aside {
     width: 100%;
 }
 
+.main-slide-container .background{
+    filter: blur(1px);
+}
+
 .main-slide-container .slide {
     width: 60%;
     height: 40vh;
@@ -259,11 +310,16 @@ aside {
 }
 
 .slide {
-    cursor: pointer;
-    box-shadow: 0px 0px 17px 9px rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-areas: "bg";
+}
+
+.background{
+    grid-area: bg;
 }
 
 .content-container {
+    grid-area: bg;
     width: 100%;
     height: 100%;
     display: flex;
@@ -271,9 +327,14 @@ aside {
     justify-content: center;
     align-items: center;
     color: #fff;
+    z-index: 2;
+    text-shadow: 0 0 10px #000;
+    background: rgba(0, 0, 0, 0.363);
+    box-shadow: 0px 0px 17px 9px rgba(0, 0, 0, 0.5);
 }
 
 .content-container h1 {
+    font-size: 4em;
     margin: 0 0 0.3em 0;
 }
 
@@ -284,45 +345,49 @@ aside {
 
 .content-container h3 {
     margin: 0 0 2em 0;
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: lighter;
 }
 
 .button-container{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .cta-btn {
     padding: 0.6em 1.5em;
-    background: #00000000;
+    background: #ff5e0044;
     border: solid #ff5e00 1px;
     color: #fff;
     cursor: pointer;
-    margin: 0 2em;
+    margin: 1em 2em;
+    border-radius: 10px;
+    transition: ease 0.3s;
+}
+
+.cta-btn:hover{
+    background: #ff5e0025;
+    color: #fff;
+    text-decoration: none;
 }
 
 .slide1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
-            rgba(0, 0, 0, 0.7)),
-        url("https://lh3.googleusercontent.com/jTtkQaCCW_yxjILj8fFk4Hikev7cb9XQmBgm75r_9PBoYR9SWmuyEkz47BBllqmSsxnUn1ekTQ=w640-h400-e365");
+    background-image: url("https://lh3.googleusercontent.com/jTtkQaCCW_yxjILj8fFk4Hikev7cb9XQmBgm75r_9PBoYR9SWmuyEkz47BBllqmSsxnUn1ekTQ=w640-h400-e365");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .slide2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
-            rgba(0, 0, 0, 0.7)),
-        url("https://underconstructionpage.com/app/wp-content/uploads/screenshots-article/urlbox.png");
+    background-image: url("https://underconstructionpage.com/app/wp-content/uploads/screenshots-article/urlbox.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .slide3 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
-            rgba(0, 0, 0, 0.7)),
-        url("https://www.optimisewebsites.co.uk/wp-content/uploads/2018/01/Step-1-Click-on-the-FireShot-Extension.jpg");
+    background-image: url("https://www.optimisewebsites.co.uk/wp-content/uploads/2018/01/Step-1-Click-on-the-FireShot-Extension.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

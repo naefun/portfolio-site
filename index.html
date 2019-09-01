@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Poppins&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
@@ -18,10 +19,10 @@
 
     <!-- navigation -->
     <aside class="navigation-container" id="nav-con">
-      <img src="imgs/nblogo.png" alt="nblogo" class="logo">
+      <a href="index.html"><img src="imgs/nblogo.png" alt="nblogo" class="logo"></a>
       <nav class="sidebar-nav">
         <ul class="list-container">
-          <li><a href="#" id="link1">HOME</a></li>
+          <li><a class="active" href="#" id="link1">HOME</a></li>
           <li><a href="#" id="link2">PROJECTS</a></li>
           <li><a href="#" id="link3">ABOUT</a></li>
           <li><a href="#" id="link4">CONTACT</a></li>
@@ -30,9 +31,11 @@
 
       <div class="social-links">
         <ul class="list-container">
-          <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-          <li><a href="#"><i class="fab fa-github"></i></a></li>
-          <li><a href="#"><i class="fas fa-envelope-open-text"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/nathan-byrne-813930118/" target="_blank"><i
+                class="fab fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/naefun" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li><a href="mailto:nathan@pixelocean.co.uk?Subject=Site%20enquiry"><i
+                class="fas fa-envelope-open-text"></i></a></li>
         </ul>
       </div>
     </aside>
@@ -53,40 +56,43 @@
       <!-- slideshow start-->
       <div class="container">
         <div class="side-slides-container" id="ssc">
-          <div class="slide slide1" id="slide1" onClick="moveSlide(this.id)">
+          <div class="slide" id="slide1" onClick="moveSlide(this.id)">
+            <div class="background slide1"></div>
             <div class="content-container">
               <h1>CONCEPT BOARD</h1>
               <div class="spacer-line"></div>
               <h3>HTML / CSS / JAVASCRIPT</h3>
               <div class="button-container">
-                <a class="cta-btn">SITE</a>
-                <a class="cta-btn">CODE</a>
+                <a href="#" class="cta-btn">SITE</a>
+                <a href="#" class="cta-btn">CODE</a>
               </div>
             </div>
           </div>
 
-          <div class="slide slide2" id="slide2" onClick="moveSlide(this.id)">
+          <div class="slide" id="slide2" onClick="moveSlide(this.id)">
+            <div class="background slide2"></div>
             <div class="content-container">
               <h1>CNN</h1>
               <div class="spacer-line"></div>
               <h3>HTML / CSS / JAVASCRIPT</h3>
               <div class="button-container">
-                <a class="cta-btn">SITE</a>
-                <a class="cta-btn">CODE</a>
+                <a href="#" class="cta-btn">SITE</a>
+                <a href="#" class="cta-btn">CODE</a>
               </div>
             </div>
           </div>
         </div>
 
         <div class="main-slide-container" id="msc">
-          <div class="slide slide3" id="main-slide" onClick="moveSlide(this.id)">
+          <div class="slide" id="main-slide" onClick="moveSlide(this.id)">
+            <div class="background slide3"></div>
             <div class="content-container">
               <h1>AMAZON</h1>
               <div class="spacer-line"></div>
               <h3>HTML / CSS / JAVASCRIPT</h3>
               <div class="button-container">
-                <a class="cta-btn">SITE</a>
-                <a class="cta-btn">CODE</a>
+                <a href="#" class="cta-btn">SITE</a>
+                <a href="#" class="cta-btn">CODE</a>
               </div>
             </div>
           </div>
@@ -94,7 +100,7 @@
       </div>
       <!-- slideshow end-->
 
-      <a class="cta-btn see-more-btn">SEE MORE</a>
+      <a href="#" class="cta-btn see-more-btn">SEE MORE</a>
 
     </div>
 
@@ -103,12 +109,12 @@
       <h2 class="misc-title">Skills</h2>
       <div class="spacer-line"></div>
       <div class="skills-image-container">
-        <img src="imgs/csslogo.png" alt="" class="skills-image">
-        <img src="imgs/jslogo.png" alt="" class="skills-image">
-        <img src="imgs/csharplogo.png" alt="" class="skills-image">
-        <img src="imgs/phplogo.png" alt="" class="skills-image">
-        <img src="imgs/pythonlogo.png" alt="" class="skills-image">
-        <img src="imgs/javalogo.png" alt="" class="skills-image">
+        <img src="imgs/csslogo.png" alt="CSS" class="skills-image">
+        <img src="imgs/jslogo.png" alt="JAVASCRIPT" class="skills-image">
+        <img src="imgs/csharplogo.png" alt="C-SHARP" class="skills-image">
+        <img src="imgs/phplogo.png" alt="PHP" class="skills-image">
+        <img src="imgs/pythonlogo.png" alt="PYTHON" class="skills-image">
+        <img src="imgs/javalogo.png" alt="JAVA" class="skills-image">
       </div>
     </aside>
   </div>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags -->
+  <meta charset="utf-8">
+  <title>Hello, world!</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/normalize.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Poppins&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body onresize="checkViewWidth()">
+  <div class="wrapper">
+
+    <!-- navigation -->
+    <aside class="navigation-container" id="nav-con">
+      <div class="logo-container">
+        <a href="../index.html"><img src="../imgs/nblogo.png" alt="nblogo" class="logo"></a>
+      </div>
+      <nav class="sidebar-nav">
+        <ul class="list-container">
+          <li><a href="../index.html" id="link1">HOME</a></li>
+          <li><a href="projects.html" id="link2">PROJECTS</a></li>
+          <li><a href="about.html" id="link3">ABOUT</a></li>
+          <li><a class="active" href="contact.html" id="link4">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <div class="social-links">
+        <ul class="list-container">
+          <li><a href="https://www.linkedin.com/in/nathan-byrne-813930118/" target="_blank"><i
+                class="fab fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/naefun" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li><a href="mailto:nathan@pixelocean.co.uk?Subject=Site%20enquiry"><i
+                class="fas fa-envelope-open-text"></i></a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="navigation-pull-tab" id="nav-pull-tab" onclick="navIconClick(this, 'nav-con')"></div>
+    <div class="misc-pull-tab" id="misc-pull-tab" onclick="navIconClick(this, 'misc-con')"></div>
+
+    <!-- main content -->
+    <div class="main-container" onclick="closeNav()">
+      
+    </div>
+
+    <!-- misc section -->
+    <aside class="misc-container" id="misc-con">
+      <h2 class="misc-title">Skills</h2>
+      <div class="spacer-line"></div>
+      <div class="skills-image-container">
+        <img src="../imgs/csslogo.png" alt="CSS" class="skills-image">
+        <img src="../imgs/jslogo.png" alt="JAVASCRIPT" class="skills-image">
+        <img src="../imgs/csharplogo.png" alt="C-SHARP" class="skills-image">
+        <img src="../imgs/phplogo.png" alt="PHP" class="skills-image">
+        <img src="../imgs/pythonlogo.png" alt="PYTHON" class="skills-image">
+        <img src="../imgs/javalogo.png" alt="JAVA" class="skills-image">
+      </div>
+    </aside>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/slideshow-switcher.js"></script>
+  <script src="../js/nav-functions.js"></script>
+</body>
+
+</html>
